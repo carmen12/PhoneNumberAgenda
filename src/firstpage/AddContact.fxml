@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstpage.AddContactController">
+    <children>
+      <GridPane prefHeight="499.0" prefWidth="453.0" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="198.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="245.0" minWidth="10.0" prefWidth="237.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="114.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="124.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="163.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="129.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="titlu" prefHeight="58.0" prefWidth="193.0" text="Contact Nou:" textFill="#0a0a0a" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelNume" text="Nume" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="labelPrenume" text="Prenume" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <RadioButton fx:id="barbat" mnemonicParsing="false" onAction="#setSex" selected="true" text="Barbat" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tg1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="femeie" mnemonicParsing="false" onAction="#setSex" selected="true" text="Femeie" toggleGroup="$tg1" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <TextField fx:id="nume" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="prenume" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="telefon" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <Button fx:id="anuleaza" mnemonicParsing="false" onAction="#anuleaza" text="Anuleaza" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Button>
+            <TextField fx:id="email" layoutX="208.0" layoutY="239.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label fx:id="labelTelefon" layoutX="80.0" layoutY="161.0" text="Telefon" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button fx:id="adauga" layoutX="288.0" layoutY="323.0" mnemonicParsing="false" onAction="#adauga" text="Adauga" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Button>
+            <CheckBox fx:id="favorit" mnemonicParsing="false" onAction="#markFavorit" prefHeight="27.0" prefWidth="136.0" text="Mark as favorit" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Label fx:id="labelEmail" layoutX="90.0" layoutY="256.0" text="Email" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>

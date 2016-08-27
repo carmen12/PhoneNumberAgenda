@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+--><root>
+ 
+        <contact>
+            <nume>Pop</nume>
+            <prenume>Ion</prenume>
+            <sex>M</sex>
+            <telefon>0745 888 333</telefon>
+            <email>ion@yahoo.com</email>
+            <favorit>favorit</favorit>
+        </contact>
+          <contact>
+            <nume>Pop</nume>
+            <prenume>Ion</prenume>
+            <sex>M</sex>
+            <telefon>0745 888 333</telefon>
+            <email>ion@yahoo.com</email>
+            <favorit>-</favorit>
+        </contact>
+          <contact>
+            <nume>Pop</nume>
+            <prenume>Ion</prenume>
+            <sex>M</sex>
+            <telefon>0745 888 333</telefon>
+            <email>ion@yahoo.com</email>
+            <favorit>-</favorit>
+        </contact>
+      
+
+
+
+
+<contact>
+        <nume>dfd</nume>
+        <prenume>dcsdfs</prenume>
+        <sex>F</sex>
+        <telefon>dcdx</telefon>
+        <email>cdscs</email>
+        <favorit>favorit</favorit>
+    </contact>
+</root>

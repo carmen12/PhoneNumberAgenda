@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstpage.FirstPageController">
+   <children>
+      <VBox layoutX="134.0" layoutY="42.0" prefHeight="400.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <MenuItem fx:id="despre" mnemonicParsing="false" onAction="#despre" text="About..." />
+                        <MenuItem fx:id="close1" mnemonicParsing="false" onAction="#close" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Delete">
+                  <items>
+                    <MenuItem fx:id="deleteSelected" mnemonicParsing="false" onAction="#deleteSelected" text="Delete selected" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Add">
+                  <items>
+                    <MenuItem fx:id="add" mnemonicParsing="false" onAction="#addContact" text="Add Contact" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <TextField alignment="CENTER" prefHeight="38.0" prefWidth="500.0" text="Lista Contactelor">
+               <font>
+                  <Font name="Bitstream Vera Serif Bold" size="24.0" />
+               </font>
+            </TextField>
+            <TableView fx:id="tabel" prefHeight="400.0" prefWidth="500.0">
+              <columns>
+                <TableColumn fx:id="nume" prefWidth="83.0" text="Nume" />
+                <TableColumn fx:id="prenume" prefWidth="112.0" text="Prenume" />
+                  <TableColumn fx:id="sex" minWidth="0.0" prefWidth="44.0" text="Sex" />
+                  <TableColumn fx:id="telefon" prefWidth="92.0" text="Telefon" />
+                  <TableColumn fx:id="email" prefWidth="168.0" text="Email" />
+                  <TableColumn fx:id="favoriti" prefWidth="160.0" text="Favoriti" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
