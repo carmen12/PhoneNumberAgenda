@@ -1,1 +1,3 @@
 # PhoneNumberAgenda
+
+A Java project.
